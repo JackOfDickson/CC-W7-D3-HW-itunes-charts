@@ -7,7 +7,7 @@ const MusicChartBox = () => {
         fetchSongs()
     })
 
-    const [songs, setSongs] = useState("")
+    const [songs, setSongs] = useState([])
 
     const fetchSongs = function() {
         fetch("https://itunes.apple.com/gb/rss/topsongs/limit=20/json")
@@ -18,7 +18,7 @@ const MusicChartBox = () => {
     return (
     <>
         <h1>TOP 20 SONGS!!!</h1>
-        <SongList/>
+        <SongList songs={songs}/>
     </>
     )
 }
