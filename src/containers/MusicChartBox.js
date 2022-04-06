@@ -1,7 +1,19 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import SongList from "../components/SongList";
 
 const MusicChartBox = () => {
+
+    useEffect(() => {
+        fetchSongs()
+    })
+
+    const [songs, setSongs] = useState("")
+
+    const fetchSongs = function() {
+        fetch("https://itunes.apple.com/gb/rss/topsongs/limit=20/json")
+        .then(response => response.json())
+        .then(data => setSongs(data.feed.entry))
+    }
 
     return (
     <>
