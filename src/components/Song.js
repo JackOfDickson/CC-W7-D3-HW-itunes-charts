@@ -4,7 +4,7 @@ const Song = ({song}) => {
 
     return (
         <div>
-            <p>{song.title.label}</p>
+            <li>{song.title.label}</li>
 
         </div>
     )

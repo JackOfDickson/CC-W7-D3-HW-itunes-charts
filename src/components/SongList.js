@@ -12,7 +12,9 @@ const SongList = ({songs}) => {
     return (
     <div>
         <h2>The list</h2>
+        <ol>
         {songItems}
+        </ol>
     </div>
     )
 }
