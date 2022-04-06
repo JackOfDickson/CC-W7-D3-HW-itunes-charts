@@ -3,10 +3,10 @@ import React from "react";
 const Song = ({song}) => {
 
     return (
-        <div>
-            <li>{song.title.label}</li>
-
-        </div>
+        <li>
+            <p>{song.title.label}</p>
+            <img src={song['im:image'][2].label}/>
+        </li>
     )
 }
 
