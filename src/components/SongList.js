@@ -5,17 +5,14 @@ const SongList = ({songs}) => {
 
     const songItems = songs.map((song, index) => {
         return (
-            <Song song={song} key={index}/>
+            <Song song={song} key={index} position={index+1}/>
         )
     })
 
     return (
-    <div>
-        <h2>The list</h2>
-        <ol>
+    <ol className="top-20-list">
         {songItems}
-        </ol>
-    </div>
+    </ol>
     )
 }
 

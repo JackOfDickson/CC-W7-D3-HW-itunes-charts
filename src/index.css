@@ -5,9 +5,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(145, 145, 145);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.top-20-list {
+  display:flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.song-item{
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  background: goldenrod;
+}
+
+.song-item>p {
+  display: flex;
+}
+
+.song-item>img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
 }

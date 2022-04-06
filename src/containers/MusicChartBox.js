@@ -17,7 +17,7 @@ const MusicChartBox = () => {
 
     return (
     <>
-        <h1>TOP 20 SONGS!!!</h1>
+        <h1>iTunes TOP 20 SONGS!!!</h1>
         <SongList songs={songs}/>
     </>
     )
